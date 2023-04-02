@@ -1,11 +1,18 @@
+import React from "react";
+import {BrowserRouter,Route,Routes} from "react-router-dom"
 
-
+import Home from "./Home/Home";
 
 function App() {
   return (
     <div className="App">
-      This is our final year project
-      Lets finish the frontend by april mid
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element= {<Home/>} />
+  
+      
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
