@@ -1,10 +1,11 @@
-import "./Login.css";
+import "./SignUp.css";
 import React, {useState} from "react"
 
-const Login = () => {
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [UnivRoll, setUnivRoll] = useState("");
+  const [Contact, setContact] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
     
@@ -29,11 +30,9 @@ const Login = () => {
      
       <b className="home"><a href="/">Home</a></b>
       <b className="contact">Contact</b>
-      <div className="login-item" >
-       <div className="cont1">
-       <div className="text1">
-        Welcome Back!
-       </div>
+      <div className="signup-item" >
+       <div className="cont11">
+       <img src="images/nsec-logo 1.png" alt="" />
        <div className="text2">
        Ready to take the next step in your career? </div>
        <div className="text2"> <span>Login to your account to</span>
@@ -44,8 +43,8 @@ const Login = () => {
       </div>
        
        </div>
-      <div className="login-inner" >
-      <div className="login1">Login</div>
+      <div className="signup-inner" >
+      <div className="signup1">SignUp</div>
       <div className="please-enter-your">Please enter your credentials!</div>
       
       
@@ -53,11 +52,11 @@ const Login = () => {
       
       
 
-      <form className="login-form" onSubmit={handleSubmit}>
-      <label className="form-label">
+      <form className="signup-form" onSubmit={handleSubmit}>
+      <label className="form-label1">
         Email:
         <input
-          className="form-input"
+          className="form-input1"
           type="email"
           value={email}
           placeholder="EMAIL"
@@ -65,10 +64,10 @@ const Login = () => {
         />
       </label>
       <br />
-      <label className="form-label">
+      <label className="form-label1">
         Password:
         <input
-          className="form-input"
+          className="form-input1"
           type="password"
           value={password}
           placeholder="PASSWORD"
@@ -76,13 +75,35 @@ const Login = () => {
         />
       </label>
       <br />
-      <button className="form-button" type="submit">Login</button>
+      <label className="form-label1">
+        University Roll Number:
+        <input
+          className="form-input1"
+          type="number"
+          value={UnivRoll}
+          placeholder="University Roll Number"
+          onChange={(event) => setEmail(event.target.value)}
+        />
+      </label>
+      <br />
+      <label className="form-label1">
+        Contact Number:
+        <input
+          className="form-input1"
+          type="number"
+          value={Contact}
+          placeholder="Contact Number"
+          onChange={(event) => setEmail(event.target.value)}
+        />
+      </label>
+      <br />
+      <button className="form-button1" type="submit">SignUp</button>
     </form>
 
       
       <div className="not-registered-register-container">
-        <span>{`Not registered? `}</span>
-        <b className="register"><a href="/SignUp">Register</a></b>
+        <span>{`Already have an account? `}</span>
+        <b className="register"><a href="/Login">Login</a></b>
       </div>
     </div>
     </div>
@@ -90,4 +111,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
