@@ -1,0 +1,200 @@
+.login-child {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    background-color: #fff;
+    width:100%;
+    height: 58rem;
+  }
+  .e {
+    color: #5add77;
+  }
+  .nsec-txt {
+    line-break: anywhere;
+    width: 100%;
+  }
+  .nsec,
+  .placement {
+    position: absolute;
+    left: 2.75rem;
+    display: flex;
+    font-family: Ubuntu;
+    align-items: center;
+  }
+  .nsec {
+    top: 1.56rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    width: 12.19rem;
+    height: 2.25rem;
+    mix-blend-mode: normal;
+  }
+  .placement {
+    top: 3.81rem;
+    font-size: 1.38rem;
+    letter-spacing: 0.05em;
+    width: 9.63rem;
+  }
+  .login-item {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    background: linear-gradient(180deg, rgba(211, 14, 14, 0.789) 30.34%, #f1e239 85.94%);
+    width: 100%;
+    height: 58rem;
+  }
+  .contact,
+  .home {
+    position: absolute;
+    top: 2.94rem;
+    left: 73.44rem;
+    letter-spacing: 0.05em;
+    display: flex;
+    color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    width: 7.13rem;
+    height: 2.44rem;
+  }
+  .contact {
+    left: 80.56rem;
+  }
+  .email-1-icon {
+    position: absolute;
+    top: 25.31rem;
+    left: 55.06rem;
+    width: 1.56rem;
+    height: 1.56rem;
+    object-fit: cover;
+  }
+  .login-inner {
+    position: absolute;
+    top: 11.31rem;
+    left: 49.06rem;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 60px 3px rgba(0, 0, 0, 0.25);
+    width: 38.69rem;
+    height: 46.88rem;
+    mix-blend-mode: normal;
+  }
+  .login1,
+  .please-enter-your {
+    position: absolute;
+    letter-spacing: 0.05em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login1 {
+    top: 15.38rem;
+    left: 56.94rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 22.81rem;
+    height: 5.06rem;
+  }
+  .please-enter-your {
+    top: 19.19rem;
+    left: 50.81rem;
+    font-size: 1.38rem;
+    width: 35.81rem;
+    height: 2.5rem;
+  }
+  .login-child1,
+  .rectangle-div {
+    position: absolute;
+    top: 24.5rem;
+    left: 54.19rem;
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 0.6);
+    width: 28.5rem;
+    height: 3.75rem;
+  }
+  .login-child1 {
+    top: 30.56rem;
+    left: 54.06rem;
+  }
+  .padlock-1-icon {
+    position: absolute;
+    top: 31.44rem;
+    left: 55.38rem;
+    width: 1.56rem;
+    height: 1.56rem;
+    object-fit: cover;
+  }
+  .login-child2 {
+    position: absolute;
+    top: 39.06rem;
+    left: 61.38rem;
+    border-radius: 10px;
+    background-color: #74ea8e;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 13.94rem;
+    height: 3.75rem;
+  }
+  .email,
+  .login2,
+  .password {
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+  .login2 {
+    top: 40rem;
+    left: 64.63rem;
+    font-size: 1.38rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    width: 7.38rem;
+    height: 1.81rem;
+  }
+  .email,
+  .password {
+    top: 25.19rem;
+    left: 57.31rem;
+    font-family: Roboto;
+    color: rgba(0, 0, 0, 0.4);
+    width: 25.38rem;
+    height: 2.25rem;
+  }
+  .password {
+    top: 31.31rem;
+    left: 57.19rem;
+    width: 16.44rem;
+  }
+  .email-2-icon {
+    position: absolute;
+    top: 25.56rem;
+    left: 55.38rem;
+    width: 1.56rem;
+    height: 1.56rem;
+    object-fit: cover;
+  }
+  .register {
+    color: #1e7531;
+  }
+  .not-registered-register-container {
+    position: absolute;
+    top: 43.88rem;
+    left: 59.94rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    width: 17rem;
+    height: 1.75rem;
+    opacity: 0.5;
+  }
+  .login {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 64rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.56rem;
+    color: #000;
+    font-family: Inter;
+  }
