@@ -76,7 +76,7 @@ const Login = () => {
         />
       </label>
       <br />
-      <button className="form-button" type="submit">Login</button>
+      <button className="form-button" type="submit"><a href="/Common">Login</a></button>
     </form>
 
       

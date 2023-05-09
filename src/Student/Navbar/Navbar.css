@@ -1,0 +1,83 @@
+.nsec
+   {
+    position: absolute;
+    left: 2.75rem;
+    display: flex;
+    margin-top: 15px;
+    font-family: Ubuntu;
+    align-items: center;
+    font-weight: 700;
+  }
+  .e {
+    color: rgba(142, 5, 5, 0.984);
+    font-weight: 700;
+  }
+  .nsec-txt {
+    line-break: anywhere;
+    width: 100%;
+    font-weight: 700;
+  }
+  .hom{
+    position: absolute;
+width: 114px;
+height: 39px;
+left: 1011px;
+top: 47px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+color: rgba(0, 0, 0, 0.7);
+text-decoration: none;
+  }
+  .Com{
+    position: absolute;
+width: 192px;
+height: 54px;
+left: 1111px;
+top: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-decoration: none;
+color: rgba(0, 0, 0, 0.7);
+
+  }
+
+  .logout{
+    position: absolute;
+    width: 114px;
+    height: 39px;
+    left: 1289px;
+    top: 47px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-decoration: none;
+color: rgba(0, 0, 0, 0.7);
+    
+  }
+  .navi{
+    position: absolute;
+    top:0;
+    margin-left: 0%;
+    height: 100px;
+    background: #2aa83b;
+
+
+  }
