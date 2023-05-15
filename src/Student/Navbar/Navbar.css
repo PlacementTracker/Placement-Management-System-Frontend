@@ -1,6 +1,6 @@
-.nsec
+/*.nsec
    {
-    position: absolute;
+    
     left: 2.75rem;
     display: flex;
     margin-top: 15px;
@@ -18,7 +18,7 @@
     font-weight: 700;
   }
   .hom{
-    position: absolute;
+  
 width: 114px;
 height: 39px;
 left: 1011px;
@@ -35,7 +35,7 @@ color: rgba(0, 0, 0, 0.7);
 text-decoration: none;
   }
   .Com{
-    position: absolute;
+  
 width: 192px;
 height: 54px;
 left: 1111px;
@@ -55,7 +55,7 @@ color: rgba(0, 0, 0, 0.7);
   }
 
   .logout{
-    position: absolute;
+   
     width: 114px;
     height: 39px;
     left: 1289px;
@@ -73,7 +73,7 @@ color: rgba(0, 0, 0, 0.7);
     
   }
   .navi{
-    position: absolute;
+  
     top:0;
     margin-left: 0%;
     height: 100px;
@@ -81,3 +81,4 @@ color: rgba(0, 0, 0, 0.7);
 
 
   }
+  */

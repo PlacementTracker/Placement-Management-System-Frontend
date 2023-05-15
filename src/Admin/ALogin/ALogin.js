@@ -1,28 +1,28 @@
-import "./Login.css";
+import "./ALogin.css";
 import React, {useState} from "react"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useUserContext } from "../Context/UserContext";
+import { useAdminContext } from "../../Context/AdminContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { logIn } = useUserContext();
+  const { logIn } = useAdminContext();
     const nav = useNavigate();
   const handleSubmit = (async(event) => {
     event.preventDefault();
    
-    await axios.post(`http://localhost:3001/Students/login`,{email,password}
+    await axios.post(`http://localhost:3001/Admin/login`,{email,password}
       )
       .then(result=>{
            
             if(result.status===200){
                 console.log("Login successfull");
                 alert("Logged in successfully!");
-                
                 logIn(email);
+             
                 
-                nav("/Common/SHome");
+                nav("/ACommon");
           
             }
             else{
@@ -72,8 +72,8 @@ const Login = () => {
         Welcome Back!
        </div>
        <div className="text2">
-       Ready to take the next step in your career? </div>
-       <div className="text2"> <span>Login to your account to</span>
+        Admin</div>
+       <div className="text2"> <span>Login to your account</span>
     
 
       <span> start exploring </span>
