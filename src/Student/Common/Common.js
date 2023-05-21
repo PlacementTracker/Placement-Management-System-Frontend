@@ -5,22 +5,34 @@ import { Outlet } from "react-router-dom";
 const Common = () => {
   return (
     <>
-    <div className="main">
+   
+    
         <Navbar/>
-
-    <div className="sidebar">
-        <div className="side-links">
-            <a href="/Common/SHome" className="dlinks">Dashboard</a>
-            <a href="/Common" className="dlinks">Profile</a>
-            <a href="" className="dlinks">Active Drives</a>
-            <a href="" className="dlinks">Interview Experiences</a>
-            <a href="" className="dlinks">Community </a>
-            
-        </div>
       
+       <div className="main1">
+
+<div className="Sidebar1">
+    <div className="Side-links1">
+       
+        <a href="/Common/SHome" className="Dlinks1">Dashboard</a>
+         <div className="line"></div>
+        
+        <a href="/Common/ViewProfile" className="Dlinks1">Profile</a>
+        <div className="line"></div>
+        <a href="/Common/ActiveJobs" className="Dlinks1">Active Drives</a>
+        <div className="line"></div>
+        <a href="/Common/InterviewExp" className="Dlinks1">Interview Experiences</a>
+        <div className="line"></div>
+        <a href="/Common/Community" className="Dlinks1">Community </a>
+        
     </div>
     </div>
+   
+  
+   <div className="other-side1">
     <Outlet/>
+    </div>
+    </div>
     </>
 
   );

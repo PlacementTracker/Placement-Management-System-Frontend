@@ -2,8 +2,10 @@ import { createContext, useContext, useState ,useEffect} from "react";
 
 export const adminContext = createContext({
   adminEmail: null,
+  studentEmail:null,
   logIn: () => {},
   logOut: () => {},
+  view: ()=>{},
   
 });
 
@@ -14,8 +16,12 @@ export function AdminContextProvider({ children }) {
     const localdata=localStorage.getItem('admin');
     return localdata?JSON.parse(localdata):ADMIN;
   }
+  
  
   );
+
+  const [Student, setStudent] = useState(
+    );
   
   function logIn(adminEmail) {
     setAdmin({ isGuestUser: false, adminEmail: adminEmail });
@@ -29,16 +35,25 @@ export function AdminContextProvider({ children }) {
   function logOut() {
     setAdmin(ADMIN);
   };
+  function view(studentEmail) {
+    console.log(studentEmail);
+    setStudent({ studentEmail:studentEmail });
+  }
+
+    useEffect(()=>{
+      localStorage.setItem('stud',JSON.stringify(Student))
+    },[]
+    )
  
   return (
-    <adminContext.Provider value={{ admin, logIn, logOut }}>
+    <adminContext.Provider value={{ admin,Student, logIn, logOut,view }}>
       {children}
     </adminContext.Provider>
   );
 }
 
 export function useAdminContext() {
-  const { admin, logIn, logOut} = useContext(adminContext);
+  const { admin,Student, logIn, logOut,view} = useContext(adminContext);
 
-  return { admin, logIn, logOut};
+  return { admin, Student,logIn, logOut,view};
 }

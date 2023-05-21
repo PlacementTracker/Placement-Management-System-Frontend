@@ -43,7 +43,7 @@
     left: 0;
     background: linear-gradient(180deg, rgba(173, 13, 13, 0.984) 30.34%, #e04242 85.94%);
     width: 100%;
-    height: 80rem;
+    height: 150rem;
   }
   .contact,
   .home {
@@ -73,7 +73,7 @@
     background-color: #fff;
     box-shadow: 0 4px 60px 3px rgba(0, 0, 0, 0.25);
     width: 38.69rem;
-    height: 58.88rem;
+    height: 130rem;
     mix-blend-mode: normal;
   }
   .signup1

@@ -1,0 +1,29 @@
+.intexp-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+width: 100%;
+min-height:max-content;
+margin-left: -10%;
+margin-top: 2.5%;
+
+}
+.intexp-post{
+    display: flex;
+    flex-direction: row;
+    background:linear-gradient(180deg, rgba(202, 33, 33, 0.984) 30.34%, #e04242 55.94%);
+border-radius: 2rem;
+padding: 2rem;
+}
+
+.intexp-det{
+    .intexp-post{
+        display: flex;
+        flex-direction: column;
+        background:linear-gradient(180deg, rgba(202, 33, 33, 0.984) 30.34%, #e04242 55.94%);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 20%;
+    }
+
+}

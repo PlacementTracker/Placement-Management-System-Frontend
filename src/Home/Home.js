@@ -46,7 +46,7 @@ const Home = () => {
         <div className="t">Admin</div>
         <div className="l1">
         <div className="p1"><a href="/ALogin">Login</a></div>
-        <div className="p1"><a href="/SignUp">SignUp</a></div>
+        
         </div>
       </div>
      </div>

@@ -15,19 +15,20 @@ const ACommon = () => {
             <a href="/ACommon/AHome" className="Dlinks">Dashboard</a>
              <div className="line"></div>
             
-            <a href="/ACommon" className="Dlinks">Student Profile</a>
+            <a href="/ACommon/AllStudents" className="Dlinks">Student Profile</a>
             <div className="line"></div>
-            <a href="" className="Dlinks">Active Drives</a>
+            <a href="/ACommon/AllJobs" className="Dlinks">All Drives</a>
             <div className="line"></div>
-            <a href="" className="Dlinks">Post Drive</a>
+            <a href="/ACommon/JobPost" className="Dlinks">Post Drive</a>
             <div className="line"></div>
-            <a href="" className="Dlinks">Announcement </a>
+            <a href="/ACommon/Announcements" className="Dlinks">Announcement </a>
             
         </div>
       
     </div>
-    
+    <div className="other-side">
     <Outlet/>
+    </div>
     </div>
     </>
 

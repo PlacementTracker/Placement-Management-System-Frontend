@@ -22,7 +22,7 @@ const Login = () => {
                 logIn(email);
              
                 
-                nav("/ACommon");
+                nav("/ACommon/AHome");
           
             }
             else{
