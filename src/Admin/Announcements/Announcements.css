@@ -34,3 +34,32 @@
 .int2{
     margin-left: 2rem;
 }
+.announce-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background:linear-gradient(45deg, #8EDACA 30.34%,#aeebde 55.94%);
+    min-height: max-content;
+    border-radius: 2rem;
+    margin-left: -10%;
+    width: 100%;
+    padding: 4rem;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+.li{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(45deg, #d8d8d8 30.34%,#dcdcdc 55.94%);
+    min-height: max-content;
+    border-radius: 2rem;
+
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: larger;
+}

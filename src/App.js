@@ -19,6 +19,8 @@ import UpdateProfile from "./Student/UpdateProfile/UpdateProfile";
 import Announcements from "./Admin/Announcements/Announcements";
 import InterviewExp from "./Student/InterviewExp/InterviewExp";
 import Community from "./Student/Community/Community";
+import About from "./About/About";
+import Contact from "./Contact/Contact";
 function App() {
   return (
     <div className="App">
@@ -27,6 +29,8 @@ function App() {
       <Route path="/" element= {<Home/>} />
       <Route path="/Login" element= {<Login/>} />
       <Route path="/SignUp" element= {<SignUp/>} />
+      <Route path="/About" element= {<About/>} />
+      <Route path="/Contact" element= {<Contact/>} />
       <Route path="/Common" element= {<Common/>} >
            <Route path="/Common/SHome" element= {<SHome/>} />
            <Route path="/Common/ViewProfile" element= {<ViewProfile/>} />

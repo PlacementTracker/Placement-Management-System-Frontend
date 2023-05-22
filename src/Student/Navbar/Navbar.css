@@ -136,7 +136,7 @@ text-decoration: none;
 
   }
 
-  .logout{
+  .logout-btn{
    
     width: 114px;
     height: 39px;
@@ -151,7 +151,9 @@ text-decoration: none;
     align-items: center;
     letter-spacing: 0.05em;
     color: rgba(0, 0, 0, 0.7);
+    background-color: white;
     text-decoration: none;
+    border:none;
   }
   .links{
     display: flex;

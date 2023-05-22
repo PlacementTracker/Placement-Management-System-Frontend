@@ -33,7 +33,7 @@ const AppJobs = (props) => {
   
     return (
       <div className='appjob-main'>
-        <h1 className='h1'>Applied Drives</h1>
+        <h1 className='h11'>Applied Drives</h1>
         <div className="appjob-outercontainer">
         
 

@@ -20,6 +20,7 @@ const JobPost = () => {
   
       
   })
+  const [date, setDate] = useState('');
   const [jdFile,setJdFile]=useState(null);
   const [pic,setPic]=useState(null);
   const handleSubmit=async(event)=>{
@@ -84,7 +85,7 @@ const JobPost = () => {
         const file1 = event.target.files[0];
         setPic(file1);
       };
-      const [date, setDate] = useState('');
+     
 
       const handleDateChange = (e) => {
         console.log(e.target.value);

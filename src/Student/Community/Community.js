@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import "./Community.css"
 const Community = () => {
     const [announcements, setAnnouncements] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -30,7 +31,7 @@ const Community = () => {
 
   return (
     <div>
-      <div className="announce-main">
+      <div className="announce-main gg">
 
 <h2>All Announcements</h2>
 

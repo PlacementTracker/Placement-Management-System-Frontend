@@ -8,8 +8,8 @@ const Home = () => {
       <h1 className="navbar__title">NSEC PLACEMENT CELL</h1>
       <ul className="navbar__menu">
         <li className="navbar__menuItem"><a href="/">Home</a></li>
-        <li className="navbar__menuItem"><a href="/about">About</a></li>
-        <li className="navbar__menuItem"><a href="/contact">Contact</a></li>
+        <li className="navbar__menuItem"><a href="/About">About</a></li>
+        <li className="navbar__menuItem"><a href="/Contact">Contact</a></li>
         <li className="navbar__menuItem"><a href="/Login">Login</a></li>
       </ul>
 

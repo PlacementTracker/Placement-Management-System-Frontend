@@ -92,9 +92,9 @@ function InterviewExp() {
   return (
     <div className='intexp-main'>
       <div className='intexp-post'>
-      <h1>Post an Interview Experience</h1>
+      <h1 className='int-h11'>Post an Interview Experience</h1>
       
-      <form onSubmit={handleSubmit}>
+      <form className="int-form" onSubmit={handleSubmit}>
         <div>
         <div>
           <label htmlFor="companyName">Company Name:</label>
@@ -134,6 +134,7 @@ function InterviewExp() {
             onChange={(e) => setDifficulty(e.target.value)}
           />
           <div>
+          <label htmlFor="difficulty">Description:</label>
           <input
             type="text"
             id="description"
@@ -143,6 +144,7 @@ function InterviewExp() {
           </div>
           </div>
           <div>
+          <label htmlFor="difficulty">Result:</label>
           <input
             type="text"
             id="result"
@@ -151,6 +153,7 @@ function InterviewExp() {
           />
           </div>
           <div>
+          <label htmlFor="difficulty">Salary:</label>
           <input
             type="number"
             id="salary"
@@ -165,21 +168,26 @@ function InterviewExp() {
           
           </div>
            <div className='intexp-det'>
-           <h1>Interview Experiences</h1>
+           <h1 className='int-h1'>Interview Experiences</h1>
            {interviews.length === 0 ? (
              <p>No interview experiences found.</p>
            ) : (
              <ul>
                {interviews.map((interview) => (
-                 <li key={interview.id}>
+                 <li className="int-li" key={interview.id}>
                    <h3>{interview.companyName}</h3>
+                   <div className='int-dd'> 
                    <p>Role: {interview.role}</p>
-                   <p>Date: {interview.interviewDate}</p>
+                   <p>Date: {interview.interviewDate.substring(0,10)}</p>
                    <p>Difficulty: {interview.difficulty}</p>
+                   </div>
+
                    <p>Description: {interview.description}</p>
+                   <div>
                    <p>Result: {interview.result}</p>
                    <p>Salary: {interview.salary}</p>
                    <p>Student Name: {interview.student}</p>
+                   </div>
                  </li>
                ))}
              </ul>

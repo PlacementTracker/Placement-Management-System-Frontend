@@ -43,9 +43,9 @@ if (loading) {
         <div className='stud-pic'>
         <img  className='stud-pic1'  height={105} width={105} src= { `http://localhost:3001/Uploads/${student.photo}`} alt='' />
         </div>
-       <div className='welcome-text'> 
-       <div className="wtext">Welcome Back!</div>
-       <div className="wn">{student.name}</div>
+       <div className='welcome-text1'> 
+       <div className="wtext1">Welcome Back!</div>
+       <div className="wn1">{student.name}</div>
        </div>
        </div>
        <AppJobs rollNo={student.rollNo}/>

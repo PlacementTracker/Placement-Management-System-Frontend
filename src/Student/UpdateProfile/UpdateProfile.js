@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useUserContext } from "./../../Context/UserContext";
+import "./UpdateProfile.css"
 function UpdateProfile() {
     const { user } = useUserContext();
     const { Student } = useUserContext();
@@ -11,8 +12,11 @@ function UpdateProfile() {
     name: '',
     rollNo: '',
     stream: '',
-    batch: ''
+    batch: '',
+    contactNo:'',
+    cgpa:'',
   });
+ 
 
   useEffect(() => {
     const fetchStudent = async () => {
@@ -26,7 +30,11 @@ function UpdateProfile() {
           name: response.data.name,
           rollNo: response.data.rollNo,
           stream: response.data.stream,
-          batch: response.data.batch
+          batch: response.data.batch,
+          contactNo: response.data.contactNo,
+          cgpa: response.data.cgpa,
+       
+
         });
       } catch (error) {
         setError('Error fetching student details');
@@ -63,10 +71,10 @@ function UpdateProfile() {
   }
 
   return (
-    <div>
-      <h1>Update Student Details</h1>
+    <div className='upd-main'>
+      <h1 className='upd-h1'>Update Student Details</h1>
       {student ? (
-        <form onSubmit={handleSubmit}>
+        <form className='upd-form' onSubmit={handleSubmit}>
           <div>
             <label>Name:</label>
             <input
@@ -107,7 +115,29 @@ function UpdateProfile() {
               required
             />
           </div>
-          <button type="submit">Update</button>
+          <div>
+            <label>Contact No:</label>
+            <input
+              type="text"
+              name="contactNo"
+              value={formData.contactNo}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label>CGPA:</label>
+            <input
+              type="text"
+              name="cgpa"
+              value={formData.cgpa}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          
+        
+          <button className='upd-btn' type="submit">Update</button>
         </form>
       ) : (
         <p>Student not found.</p>

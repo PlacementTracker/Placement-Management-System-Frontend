@@ -16,9 +16,9 @@ function Navbar() {
     </span>
     </div>
     <div className="links">
-         <a href="/Common" className="hom">Home</a>
-         <a href="/Common" className="Com">Community</a>
-         <button onClick={logOut}  className="logout"><Link to="/Login">LogOut</Link></button>
+         <a href="/Common/SHome" className="hom">Home</a>
+         <a href="/Common/Community" className="Com">Community</a>
+         <button className="logout-btn" onClick={logOut}  ><Link to="/Login">LogOut</Link></button>
     </div>
 
 

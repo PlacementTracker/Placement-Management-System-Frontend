@@ -29,21 +29,28 @@ const AllJobs = () => {
       <div>
         <h1>Jobs List</h1>
   
-        
   
-        <ul>
+        <ul className='actj-outer'>
           {jobs.map((job) => (
-            <li key={job.jobId}>
-              <h2>{job.title}</h2>
-              <p>Location: {job.location}</p>
-              <p>Salary(in LPA): {job.salary}</p>
-              <p>JobId: {job.jobId}</p>
-              <p>Company Name: {job.companyName}</p>
-              <p>Aplly Link: {job.applyLink}</p>
-              <p>Last Date: {job.LastDate}</p>
+            <li className='actj-inner' key={job.jobId}>
+              <h2 className='h2a'>Title :{job.title}</h2>
+              <div className="actj1">
+              <p className='actj-p'>Company Name: {job.companyName}</p>
+              <p className='actj-p'>Location: {job.location}</p>
+              <p className='actj-p'>Job Id: {job.jobId}</p>
+              </div>
+              <div className="actj1">
+              <p className='actj-p'>Salary: {job.salary}</p>
+              <p className='actj-p1'>Last Date: {job.LastDate.substring(0,10)}</p>
+            
+              </div>
+              
+        
+       
             </li>
           ))}
         </ul>
+
       </div>
     );
   
